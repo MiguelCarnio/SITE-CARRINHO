@@ -1,0 +1,42 @@
+{
+    "smartphones": [
+        ["iphone 15 pro max", "https://images.unsplash.com/photo-1695048133142-1a20484d2569", "apple com tela de 6.7 polegadas e titanium", "smartphone", 7899.00],
+        ["galaxy s24 ultra", "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf", "samsung com inteligencia artificial e caneta s-pen", "smartphone", 6999.00],
+        ["xiaomi 13 pro", "https://images.unsplash.com/photo-1598327105666-5b89351aff97", "leica camera system e carregamento ultrarapido", "smartphone", 5499.00],
+        ["motorola edge 40", "https://images.unsplash.com/photo-1565849904461-04a58ad377e0", "tela p-oled curva de 144hz", "smartphone", 3199.00],
+        ["iphone 14", "https://images.unsplash.com/photo-1591337676887-a217a6970a8a", "apple com chip a15 bionic e duvla camera", "smartphone", 4799.00]
+
+    ],
+    "eletrodomesticos": [
+        ["geladeira frost free inverse", "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30", "brastemp 443 litros com painel touch", "eletrodomestico", 3899.00],
+        ["maquina de lavar roupas 12kg", "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1", "electrolux com cesto em inox e funcao turbo", "eletrodomestico", 2199.00],
+        ["micro-ondas 30l", "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078", "panasonic com funcao desodorizador", "eletrodomestico", 750.00],
+        ["air fryer 4l", "https://m.media-amazon.com/images/I/5106QpD9V6L._AC_SY300_SX300_QL70_ML2_.jpg", "philco com cesto antiaderente e timer", "eletrodomestico", 450.00],
+        ["liquidificador turbo 12v", "https://static1.efacil.com.br/wcsstore/ExtendedSitesCatalogAssetStore/Imagens/360/MKP006164000239-00052_01.jpg", "arno com 3 velocidades e funcao autolimpeza", "eletrodomestico", 189.90]
+
+    ],
+    "notebooks": [
+        ["macbook air m2", "https://images.unsplash.com/photo-1517336714731-489689fd1ca8", "apple com chip m2 e bateria de longa duracao", "notebook", 8999.00],
+        ["dell inspiron 15", "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed", "intel core i7 com 16gb de ram e ssd 512gb", "notebook", 4599.00],
+        ["lenovo ideapad gaming 3", "https://images.unsplash.com/photo-1603302576837-37561b2e2302", "notebook gamer com placa rtx 2050", "notebook", 3999.00],
+        ["asus zenbook 14", "https://images.unsplash.com/photo-1544717305-2782549b5136", "ultrabook com tela oled e design fino", "notebook", 6299.00],
+        ["acer nitro 5", "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2", "gamer com rtx 3050 e tela de 144hz", "notebook", 4299.00]
+
+    ],
+    "perifericos": [
+        ["teclado mecanico rgb", "https://images.unsplash.com/photo-1587829741301-dc798b83add3", "switch blue com iluminacao personalizavel", "teclado", 220.00],
+        ["headset gamer 7.1", "https://images.unsplash.com/photo-1546435770-a3e426bf472b", "surround com microfone com cancelamento de ruido", "audio", 189.90],
+        ["mousepad xl speed", "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7", "superficie emborrachada antiderrapante", "acessorio", 79.90],
+        ["webcam full hd 1080p", "https://images.unsplash.com/photo-1587829741301-dc798b83add3", "foco automatico e microfone integrado", "camera", 249.00],
+        ["microfone condenser usb", "https://images.unsplash.com/photo-1590602847861-f357a9332bbc", "ideal para podcasts e streaming", "audio", 349.90]
+
+    ],
+    "audio_e_video": [
+        ["smart tv 55 polegadas 4k", "https://images.unsplash.com/photo-1593784991095-a205069470b6", "samsung crystal uhd com comando de voz", "televisor", 2899.00],
+        ["soundbar bluetooth", "https://images.unsplash.com/photo-1545454675-3531b543be5d", "jbl com subwoofer sem fio e som imersivo", "audio", 1299.00],
+        ["fone de ouvido bluetooth tws", "https://images.unsplash.com/photo-1590658268037-6bf12165a8df", "xiaomi redmi buds com cancelamento de ruido", "audio", 199.90],
+        ["projetor portatil smart", "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c", "samsung freestyle com projecao de 100 polegadas", "video", 3499.00],
+        ["caixa de sem portatil", "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1", "jbl flip 6 resistente a agua ip67", "audio", 699.00]
+
+    ]
+}
