@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SITE DE COMPRAS (teste de js)</title>
+    <title>SITE DE COMPRAS</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="src/fonts/New Piskel1.gif" type="image/x-icon">
 </head>
 
 <body>
-    <h1>MEU SITE DE COMPRAS :</h1>
+    
 
     <div id="main-content">
-            <div class="search-box">
-        <input id="categoria" type="text" placeholder="Digite a categoria...">
-        <button id="pesquisar">pesquisar</button>
+
+            <div class="search-box" id="search">
+                <h1>MEU SITE DE COMPRAS :</h1>
+                <input id="categoria" type="search" placeholder="Pesquise produtos..." autocomplete="off">
+
+
     </div>
     <div id="products">
 
     </div>
     <div id="cart">
         <h2>Carrinho</h2>
+        <div id="cart-items"></div>
         <h2>total</h2>
-        <h3 id="total"></h3>
+        <h3 id="TOTAL"></h3>
+        <button id="clear-cart" type="button">APAGAR TUDO</button>
     </div>
 
     </div>

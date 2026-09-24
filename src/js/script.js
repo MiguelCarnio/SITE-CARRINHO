@@ -8,7 +8,8 @@ const productTags = ['h2', 'img', 'p', 'span', 'strong'];
 
 // Elementos do DOM
 const cartElement = document.getElementById('cart');
-const totalElement = document.getElementById('total');
+const cartItemsElement = document.getElementById('cart-items');
+const totalElement = document.getElementById('TOTAL');
 
 // Estado do Carrinho (Recupera do LocalStorage se existir)
 let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -22,16 +23,20 @@ function searchProducts() {
     const productsContainer = document.getElementById('products');
     productsContainer.innerHTML = '';
 
-    const selectedCategory = document.getElementById('categoria').value;
+    const searchTerm = document.getElementById('categoria').value
+        .trim()
+        .toLocaleLowerCase();
+    const allProducts = Object.values(catalog).flat();
 
-    if (Object.hasOwn(catalog, selectedCategory)) {
-        products = catalog[selectedCategory];
-    } else if (selectedCategory === '') {
-        products = Object.values(catalog).flat(1);
-    } else {
-        alert('Categoria inválida. Por favor, selecione uma categoria válida: smartphones, eletrodomesticos, notebooks, perifericos, audio_e_video');
-        return;
-    }
+    products = allProducts.filter(product => {
+        if (!searchTerm) {
+            return true;
+        }
+
+        return product
+            .filter(value => typeof value === 'string')
+            .some(value => value.toLocaleLowerCase().includes(searchTerm));
+    });
 
     productGrid.innerHTML = '';
     
@@ -102,7 +107,7 @@ function removeFromCart(productName) {
 }
 
 function renderCart() {
-    cartElement.innerHTML = '';
+    cartItemsElement.innerHTML = '';
     totalPrice = 0;
 
     cartItems.forEach(item => {
@@ -125,7 +130,7 @@ function renderCart() {
 
         const removeBtn = document.createElement('button');
         removeBtn.className = 'remove-btn';
-        removeBtn.textContent = '❌';
+        removeBtn.textContent = 'X';
         removeBtn.onclick = () => removeFromCart(item.name);
 
         cartItem.appendChild(quantityElement);
@@ -133,14 +138,21 @@ function renderCart() {
         cartItem.appendChild(priceElement);
         cartItem.appendChild(removeBtn);
 
-        cartElement.appendChild(cartItem);
+        cartItemsElement.appendChild(cartItem);
     });
 
     totalElement.textContent = 'R$ ' + totalPrice.toFixed(2);
 }
 
 // Listeners e Inicialização
-document.getElementById('pesquisar').addEventListener('click', searchProducts);
+document.getElementById('categoria').addEventListener('input', searchProducts);
 
+function ai() {
+    cartItems = [];
+    saveCartToLocalStorage();
+    renderCart();
+}
+
+document.getElementById('clear-cart').addEventListener('click', ai);
 searchProducts();
 renderCart();

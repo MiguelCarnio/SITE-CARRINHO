@@ -1,6 +1,7 @@
 body {
     background-color: #121212;
     color: #e0e0e0;
+    font-family: 'MinhaFonteCustom', sans-serif;
 
     margin: 0;
     padding: 20px;
@@ -13,29 +14,7 @@ body {
     font-style: normal;
     font-display: swap;
 }
-.buscar{
-    width: 400px;
-    padding: 10px;
-    font-family: 'MinhaFonteCustom', sans-serif;
-}
-
-.search-box button#pesquisar {
-    font-family: 'MinhaFonteCustom', sans-serif;
-    background-color: #ff5555;
-    color: #121212;
-    border: 2px solid #000000;
-
-    padding: 16px;         
-
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
-    box-shadow: 4px 4px 0px #000000;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-}
-
-.search-box input[type="text"] {
+.search-box input[type="search"] {
     font-family: 'MinhaFonteCustom', sans-serif;
     background-color: #121212;
     color: #55ff55;
@@ -60,11 +39,9 @@ button:active {
     transform: translate(3px, 3px);
     box-shadow: 0px 0px 0px #000000;
 }
-body {
-    font-family: 'MinhaFonteCustom', sans-serif;
-}
+
 #products {
-    width: 95%;
+    width: 90%;
 }
 
 #product-grid {
@@ -110,9 +87,6 @@ body {
     margin: 5px 0;
     color: #ffffff;
 }
-p{
-    margin-right: 20px;
-}
 .product-card p {
     font-size: 0.85rem;
     color: #b0b0b0;
@@ -130,8 +104,8 @@ p{
     margin: 8px 0;
     color: #55ff55;
 }
-
-.product-card button {
+.product-card button,
+#clear-cart {
     background-color: #ff5555;
     color: #121212;
     border: 2px solid #000;
@@ -139,15 +113,12 @@ p{
     cursor: pointer;
     font-weight: bold;
     width: 100%;
-    margin-top: 10px;
+    margin-top: auto;
     box-shadow: 2px 2px 0px #000;
 }
 
-.product-card button {
-    margin-top: auto;
-}
-
-.product-card button:active {
+.product-card button:active,
+#clear-cart:active {
     transform: translate(2px, 2px);
     box-shadow: none;
 }
@@ -156,12 +127,8 @@ p{
 
     margin-right: 10px;
 }
-.preco {
-    width: 100px;
-    margin-left: 20px;
-}
 #cart {
-    width: 380px;
+    width: 20%;
     position: fixed;
     right: 20px;
     top: 20px;
@@ -177,6 +144,11 @@ p{
 #main-content {
     margin-left: 20px;
     width: calc(100% - 420px);
+
+    
+}
+#search{
+    display: flex;
 }
 #cart h2 {
     font-size: 1.1rem;
