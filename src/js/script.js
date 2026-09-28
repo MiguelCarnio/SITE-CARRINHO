@@ -146,13 +146,12 @@ function renderCart() {
 
 // Listeners e Inicialização
 document.getElementById('categoria').addEventListener('input', searchProducts);
-
-function ai() {
-    cartItems = [];
+function ai(){
+    cartItems=[];
     saveCartToLocalStorage();
     renderCart();
 }
-
-document.getElementById('clear-cart').addEventListener('click', ai);
+let button2 = document.getElementById('clear-cart');
+button2.addEventListener('click', ai);
 searchProducts();
 renderCart();
