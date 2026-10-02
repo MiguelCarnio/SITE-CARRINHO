@@ -1,7 +1,7 @@
 #  E-Commerce / Carrinho de Compras Dynamic
 
 Um site responsivo e interativo de e-commerce focado em uma experiência simples e fluida de navegação e gerenciamento de carrinho de compras.
-
+*apenas funciona com live server*
 ---
 
 ##  Demonstração & Funcionalidades
