@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITE DE COMPRAS</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <link rel="icon" href="src/fonts/New Piskel1.gif" type="image/x-icon">
+    <link rel="icon" href="src/fonts/redstone_block.png" type="image/png">
 </head>
 
 <body>
-    
+    <main id="main-content">
 
-    <div id="main-content">
-
-            <div class="search-box" id="search">
-                <h1>MEU SITE DE COMPRAS :</h1>
+        <header class="search-box" id="search">
+            <h1>MEU SITE DE COMPRAS :</h1>
+            <form role="search">
                 <input id="categoria" type="search" placeholder="Pesquise produtos..." autocomplete="off">
+            </form>
+        </header>
 
+        <section id="products" aria-label="Lista de Produtos">
+        </section>
 
-    </div>
-    <div id="products">
+        <aside id="cart" aria-label="Carrinho de Compras">
+            <h2>Carrinho</h2>
+            <div id="cart-items"></div>
+            
+            <footer>
+                <h2>Total</h2>
+                <h3 id="TOTAL"></h3>
+                <button id="clear-cart" type="button">APAGAR TUDO</button>
+            </footer>
+        </aside>
 
-    </div>
-    <div id="cart">
-        <h2>Carrinho</h2>
-        <div id="cart-items"></div>
-        <h2>total</h2>
-        <h3 id="TOTAL"></h3>
-        <button id="clear-cart" type="button">APAGAR TUDO</button>
-    </div>
+    </main>
 
-    </div>
+    <script type="module" src="src/js/script.js"></script>
 </body>
-<script type="module" src="src/js/script.js"></script>
 </html>
